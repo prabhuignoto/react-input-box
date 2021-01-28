@@ -1,4 +1,11 @@
 {
+  "name": "react-texty",
+  "author": {
+    "email": "prabhu.m.murthy@gmail.com",
+    "name": "Prabhu Murthy",
+    "url": "https://www.prabhumurthy.com"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -7,6 +14,7 @@
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
@@ -17,11 +25,11 @@
     "@snowpack/web-test-runner-plugin": "^0.2.0",
     "@testing-library/react": "^11.0.0",
     "@types/chai": "^4.2.13",
+    "@types/classnames": "^2.2.11",
     "@types/mocha": "^8.2.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/snowpack-env": "^2.3.2",
-    "@web/test-runner": "^0.12.0",
     "chai": "^4.2.0",
     "prettier": "^2.0.5",
     "snowpack": "^3.0.1",

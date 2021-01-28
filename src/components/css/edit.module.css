@@ -1,0 +1,72 @@
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+  min-width: 200px;
+  position: relative;
+}
+
+.wrapper:hover {
+  cursor: text;
+}
+
+@keyframes blink {
+  from, to {
+    background: #000;
+  }
+  50% {
+    background: transparent;
+  }
+}
+
+.text {
+  user-select: none;
+  align-items: center;
+  display: flex;
+  min-width: 5px;
+  font-size: 1rem;
+  order: 1;
+  min-width: 2px;
+  position: relative;
+}
+
+.blink {
+  animation: blink;
+  align-items: center;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  justify-content: flex-start;
+  width: 1px;
+  height: 18px;
+  margin-left: 1px;
+  order: var(--blink-order);
+  visibility: var(--blink-visibility);
+}
+
+.char {
+  order: var(--char-order);
+  padding: 0;
+  transition: opacity 0.1s ease;
+}
+
+.char.highlight {
+  background: red;
+}
+
+.char-wrapper {
+  align-items: center;
+  display: flex;
+  position: relative;
+  display: block;
+  padding: 0;
+}
